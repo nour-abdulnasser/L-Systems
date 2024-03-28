@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <form action="" class="">
+          <div class="d-flex flex-column">
+            <label for="variables">Variables</label>
+            <input
+              class="form-control"
+              id="variables"
+              type="text"
+              placeholder=""
+            />
+            <label for="axiom">Axiom</label>
+            <input class="form-control" id="axiom" type="text" placeholder="" />
+            <label for="startingAngle">starting angle (degrees)</label>
+            <input
+              class="form-control"
+              id="startingAngle"
+              type="number"
+              placeholder=""
+            />
+
+            <label for="rotationAngle">rotation angle (degrees)</label>
+            <input
+              class="form-control"
+              id="rotationAngle"
+              type="number"
+              placeholder=""
+            />
+            <label for="iterations">iterations</label>
+            <input
+              class="form-control"
+              id="iterations"
+              type="number"
+              placeholder=""
+            />
+
+            <label for="numRules">How many rules?</label>
+            <input
+              class="form-control"
+              id="numRules"
+              type="number"
+              placeholder=""
+              oninput="createRulesFields()"
+            />
+            <div id="rules" class="d-flex flex-column"></div>
+          </div>
+          <!-- <button onclick="generateRules()">Send rules</button> -->
+        </form>
+        <button onclick=" generateSystem()">done</button>
+        <!-- <button class="btn-info" onclick="generateSentence()">Generate</button> -->
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
